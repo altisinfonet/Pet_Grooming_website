@@ -1,0 +1,12 @@
+/* @import "variables";
+@import "@coreui/coreui/scss/coreui";
+@import "@coreui/chartjs/scss/coreui-chartjs";
+@import "layout";
+@import "example";
+@import "custom"; */
+
+@import url(_variables.css);
+/* @import url(~@coreui/coreui/scss/coreui);
+@import url(~@coreui/coreui/scss/coreui-chartjs); */
+@import url(_layout.css);
+@import url(_custom.css);

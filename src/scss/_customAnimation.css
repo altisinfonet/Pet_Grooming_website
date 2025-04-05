@@ -1,0 +1,160 @@
+/* Typewriter effect 1 */
+@keyframes typing {
+
+  0%,
+  27.3488% {
+    content: "'";
+  }
+
+  1.1395%,
+  26.2093% {
+    content: "'d";
+  }
+
+  2.2791%,
+  25.0698% {
+    content: "'do";
+  }
+
+  3.4186%,
+  23.9302% {
+    content: "'dog";
+  }
+
+  4.5581%,
+  22.7907% {
+    content: "'dog'";
+  }
+
+  30.7674%,
+  51.2791% {
+    content: "'";
+  }
+
+  31.907%,
+  50.1395% {
+    content: "'c";
+  }
+
+  33.0465%,
+  49% {
+    content: "'ca";
+  }
+
+  34.186%,
+  47.8605% {
+    content: "'cat";
+  }
+
+  35.3256%,
+  46.7209% {
+    content: "'cat'";
+  }
+
+  54.6977%,
+  75.2093% {
+    content: "'";
+  }
+
+  55.8372%,
+  74.0698% {
+    content: "'d";
+  }
+
+  56.9767%,
+  72.9302% {
+    content: "'do";
+  }
+
+  58.1163%,
+  71.7907% {
+    content: "'dog";
+  }
+
+  59.2558%,
+  70.6512% {
+    content: "'dog'";
+  }
+
+  78.6279%,
+  96.8605% {
+    content: "'";
+  }
+
+  79.7674%,
+  95.7209% {
+    content: "'c";
+  }
+
+  80.907%,
+  94.5814% {
+    content: "'ca";
+  }
+
+  82.0465%,
+  93.4419% {
+    content: "'cat'";
+  }
+
+  83.186%,
+  92.3023% {
+    content: "'cat'";
+  }
+}
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+
+    0%,
+    100% {
+      content: "cat service";
+    }
+
+    25% {
+      content: "dog service";
+    }
+
+    50% {
+      content: "cat service";
+    }
+
+    75% {
+      content: "dog service";
+    }
+  }
+}

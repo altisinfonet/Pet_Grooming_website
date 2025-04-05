@@ -1,0 +1,1 @@
+export { default as StatusListPage } from './status/statusList';

@@ -1,0 +1,634 @@
+/* // @import url(Beforelogin.css);
+// @import url(App.scss); */
+
+/* @import "Beforelogin.css";
+@import "App.scss"; */
+@import url(App.css);
+@import url(Beforelogin.css);
+@import url(BranchCreate.css);
+@import url(sidebar.css);
+
+/* @import url("../scss/_admin.scss");
+@import url("../scss/_client.scss");
+@import url("../scss/_clientNew.scss");
+@import url("../scss/_custom.scss");
+@import url("../scss/_customAnimation.scss");
+@import url("../scss/_layout.scss");
+@import url("../scss/_variables.scss");
+@import url("../scss/style.scss");
+
+@import "../scss/_admin.css";
+@import "../scss/_client.css";
+@import "../scss/_clientNew.css";
+@import "../scss/_custom.css";
+@import "../scss/_customAnimation.css";
+@import "../scss/_layout.css";
+@import "../scss/_variables.css";
+@import "../scss/style.css";
+@import "BranchCreate.css";
+@import "sidebar.css"; */
+
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+.form-select {
+  text-decoration: none !important;
+  box-shadow: none !important;
+  outline: 0;
+}
+
+
+button {
+  box-shadow: none !important;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+button.accordion-button {
+  /* color: #e4509e !important; */
+  font-weight: 600;
+}
+
+button.accordion-button:focus {
+  box-shadow: none;
+}
+
+.form-check-input:checked {
+  box-shadow: none;
+}
+
+.form-check-input {
+  margin-top: 0.4em;
+}
+
+
+.hstack .badge.rounded-pill {
+  padding: 6px 10px;
+}
+
+.bg-success {
+  color: #fff;
+}
+
+.icon_important_header {
+  width: 19px !important;
+  height: auto !important;
+}
+
+/* /thank you page */
+
+.containerThankyou {
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  /* position: fixed; */
+  z-index: 9999;
+  /* top: 0;
+  left: 0; */
+  width: 100%;
+  /* height: 80vh; */
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.divContainerThanku {
+  max-width: 600px;
+  width: 100%;
+  /* position: absolute; */
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -50%); */
+  z-index: 2;
+  height: 100%;
+  /* margin-top: 40px !important; */
+  /* padding-top: 15px !important;
+  padding-bottom: 15px !important; */
+}
+
+.shake-animation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: shake 0.5s ease;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  20% {
+    transform: translateX(-10px);
+  }
+
+  40% {
+    transform: translateX(10px);
+  }
+
+  60% {
+    transform: translateX(-10px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.error-text {
+  color: red;
+  margin-right: 10px;
+}
+
+@keyframes spin3D {
+  0% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+.spin-icon {
+  display: inline-block;
+  animation: spin3D 3s infinite linear;
+}
+
+.congratulation_tag {
+  font-size: 1rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+
+@media (max-width: 480px) {
+  .congratulation_tag {
+    font-size: 0.9rem;
+  }
+}
+
+.form-control-borderless {
+  border: none;
+}
+
+.form-control-borderless:hover,
+.form-control-borderless:active,
+.form-control-borderless:focus {
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+/* General styling */
+.form-group-input-animation {
+  position: relative;
+  /* margin: 20px 0; */
+  width: 100%;
+}
+
+.form-group-input-animation input {
+  font-size: 18px;
+  padding: 10px;
+  display: block;
+  /* width: 100%; */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  outline: none;
+}
+
+.form-group-input-animation label {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  background: white;
+  color: #aaa;
+  font-size: 14px;
+  pointer-events: none;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-group-input-animation label.mobbbbb {
+  left: 40px !important;
+}
+
+
+
+/* Floating effect on focus or when the input has content */
+.form-group-input-animation input:focus+label,
+.form-group-input-animation input:not(:placeholder-shown)+label {
+  top: -1px;
+  left: 10px;
+  font-size: 9.5px;
+  color: #666;
+  background-color: #f7f1f1;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+.form-group-input-animation input:focus+label.mobbbbb,
+.form-group-input-animation input:not(:placeholder-shown)+label.mobbbbb {
+  left: 10px !important;
+}
+
+/* Add focus styles */
+.form-group-input-animation input:focus {
+  border-color: #666;
+}
+
+
+
+/*******Custom-Modal*******/
+.CustomPopup_modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #00000056;
+  z-index: 999;
+}
+
+.CustomPopup_body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 95%;
+  max-width: 650px;
+  max-height: 500px;
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 2;
+}
+
+.CustomPopup_body .close_btn {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  z-index: 3;
+  font-size: 22px;
+  color: #fa0606;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+}
+
+
+
+
+
+
+
+
+.dot_animation {
+  max-height: 10px;
+  max-width: 10px;
+  min-width: 10px;
+  /* background: #d8428c;  */
+  border-radius: 50%;
+  position: relative;
+  left: 5px;
+}
+
+.dot_animation::after {
+  content: "\f14a";
+  font-family: "FontAwesome";
+  /* height: 5px; 
+  width: 5px;  */
+  /* background: #d8428c;  */
+  color: #d8428c;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  /* transform: translateY(-50%); */
+  /* opacity: 0; 
+  animation: dotani 1000ms linear infinite;  */
+}
+
+.dot_animation2 {
+  max-height: 10px;
+  max-width: 10px;
+  min-width: 10px;
+  /* background: #d8428c;  */
+  border-radius: 50%;
+  position: relative;
+  left: 28px;
+}
+
+.dot_animation2::after {
+  content: "\f14a";
+  font-family: "FontAwesome";
+  /* height: 5px; 
+  width: 5px;  */
+  /* background: #d8428c;  */
+  color: #0a82a0;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  /* transform: translateY(-50%); */
+  /* opacity: 0; 
+  animation: dotani 1000ms linear infinite;  */
+}
+
+/* @keyframes dotani { 
+  0% { 
+    opacity: 0; 
+  } 
+  50% { 
+    opacity: .75; 
+    transform: scale(1); 
+  } 
+  100% { 
+    opacity: .1; 
+    transform: scale(4); 
+  } 
+} */
+
+
+.custom_loader {
+  width: 40px;
+  height: 40px;
+  border: 6px solid transparent;
+  border-top: 6px solid #e4509e;
+  border-radius: 50%;
+  animation: spin 1s linear infinite, glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* @keyframes glow {
+  0% { box-shadow: 0 0 10px #e4509e; }
+  100% { box-shadow: 0 0 30px #e4509e; }
+} */
+
+
+
+
+
+
+
+
+
+
+/* Custom Checkbox */
+.custom-checkbox {
+  appearance: none;
+  /* Remove default appearance */
+  width: 18px;
+  height: 18px;
+  border: 2px solid #d8428c;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checkmark (✓) */
+.custom-checkbox:checked::before {
+  content: "✔";
+  /* Adds the checkmark symbol */
+  position: absolute;
+  left: 1px;
+  /* Adjust left position of the checkmark */
+  top: -3px;
+  /* Adjust top position */
+  font-size: 14px;
+  /* Size of the checkmark */
+  color: white;
+  /* Color of the checkmark */
+}
+
+/* Change the background color when checked */
+.custom-checkbox:checked {
+  background-color: #d8428c;
+  border-color: #d8428c;
+}
+
+.custom-checkbox2 {
+  appearance: none;
+  /* Remove default appearance */
+  width: 18px;
+  height: 18px;
+  border: 2px solid #0a82a0;
+  border-radius: 4px;
+  background-color: white;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Checkmark (✓) */
+.custom-checkbox2:checked::before {
+  content: "✔";
+  /* Adds the checkmark symbol */
+  position: absolute;
+  left: 1px;
+  /* Adjust left position of the checkmark */
+  top: -3px;
+  /* Adjust top position */
+  font-size: 14px;
+  /* Size of the checkmark */
+  color: white;
+  /* Color of the checkmark */
+}
+
+/* Change the background color when checked */
+.custom-checkbox2:checked {
+  background-color: #0a82a0;
+  border-color: #0a82a0;
+}
+
+/* 
+@media (max-width: 576px) {
+
+  .css-tlc64q-MuiPaper-root-MuiDialog-paper {
+    width: calc(100% - 15px) !important;
+    margin: 0 auto !important;
+  }
+
+  .css-1t1j96h-MuiPaper-root-MuiDialog-paper {
+    width: calc(100% - 15px) !important;
+    margin: 0 auto !important;
+  }
+
+  .SupportButton {
+    gap: 0;
+    padding: 2px !important;
+  }
+
+  .gap-2 {
+    gap: 0 !important;
+  }
+} */
+
+
+
+
+@media (max-width:"576px") {
+  .addBanner{
+    height: auto;
+  }
+}
+
+
+
+
+
+
+
+.draggable_list_section {
+  max-width: 100%;
+  max-height: 450px;
+  overflow-y: scroll;
+  margin: 2vh auto;
+  background: rgb(255, 255, 255);
+  padding: 2em 1em;
+  border-radius: 0.5em;
+  border: 2px solid rgb(214, 214, 214);
+  /* box-shadow: 4px 4px 50px rgba(104, 123, 247, 0); */
+  transition: box-shadow 100ms linear;
+}
+
+/* .draggable_list_section:hover {
+  box-shadow: 4px 4px 50px rgba(104, 123, 247, 0.6);
+} */
+
+.draggable_list_ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.draggable_list_ul .draggable_list_li {
+  display: flex;
+  align-items: center;
+  cursor: move;
+  line-height: 1;
+  margin-bottom: 0.1em;
+  border-radius: 5px;
+  padding: 10px 15px;
+
+  border: 1px solid rgb(240, 237, 237);
+}
+
+.draggable_list_ul .draggable_list_li.dropArea {
+  color: rgb(0, 0, 0) !important;
+  /* background: white !important; */
+  position: relative;
+  right: 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.draggable_list_ul .draggable_list_li.dropArea::before {
+  content: "Drop Here";
+  color: #687bf7;
+  font-size: 0.5em;
+  text-transform: uppercase;
+  width: 100%;
+  height: 50px;
+  border: 2px dashed #687bf7;
+  border-radius: 3px;
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  padding: 10px 15px;
+  margin: 0 auto;
+  line-height: 1;
+}
+
+.draggable_list_ul .draggable_list_li.dropArea .draggable_list_span {
+  display: none;
+}
+
+.draggable_list_ul .draggable_list_li.dropArea .draggable_list_p {
+  /* margin-left: 1em; */
+}
+
+.draggable_list_ul .draggable_list_li:hover {
+  /* background: linear-gradient(to left, #687bf7, #72d9ef); */
+  color: rgb(0, 0, 0);
+  background-color: aliceblue;
+}
+
+.draggable_list_ul .draggable_list_li:hover .draggable_list_span {
+  /* background-color: #79e7eb; */
+}
+
+.draggable_list_ul .draggable_list_li .draggable_list_span {
+  display: inline-block;
+  margin-right: 1em;
+  margin-left: 0.5em;
+  background-color: #72d9ef;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-weight: bold;
+  transition: background-color 100ms linear;
+}
+
+.draggable_list_ul .draggable_list_li .draggable_list_p {
+  transition: margin-left 50ms ease-in-out;
+}
+
+.draggable_list_ul .draggable_list_li i {
+  margin-left: auto;
+  margin-right: 1em;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0.2;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
